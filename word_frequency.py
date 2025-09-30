@@ -34,4 +34,14 @@ user_sentence = input("Enter a sentence: ")
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
+
+
+import string 
+ 
+words_in_sentence = user_sentence.lower().split()
+
+# Two lists for words and their frequencies
+words = []
+frequencies = [] 
+
     
