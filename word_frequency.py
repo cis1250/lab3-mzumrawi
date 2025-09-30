@@ -43,17 +43,7 @@ words_in_sentence = user_sentence.lower().split()
 # Two lists for words and their frequencies
 words = [] 
 frequencies = []   
-# Count word frequencies
-for word in words_in_sentence:  
-    word = word.strip(string.punctuation) 
-    if word in words: 
-        index = words.index(word) 
-        frequencies[index] += 1
-    else:
-        words.append(word)
-        frequencies.append(1)
-
-for i in range(len(words)):
-    print(f"{words[i]}: {frequencies[i]}")   
+  
+  
 
     
