@@ -29,7 +29,7 @@ def is_sentence(text):
 
     return True
 
-user_sentence = input("Enter a sentence: ")
+user_sentence = input("Enter a sentence: ")c
 
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
