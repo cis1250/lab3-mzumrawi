@@ -17,26 +17,23 @@ def fibonacci_sequence(n):
           
                       
 def main():
-    while True:
-    user_input = input("How many terms of the Fibonacci sequence do you want? ")    
+   while True:
+    user_input = input("How many terms of the Fibonacci sequence do you want? ")
 
     # Validate input
     if not user_input.isdigit():
         print("Please enter a positive integer.")
-        continue
-
-    n = int(user_input)
-    if n <= 0: 
-        print("Please enter a positive integer.")
-        continue
-
-    # Calculate and print Fibonacci sequence
-    a, b = 0, 1
-    for _ in range(n):
-        print(a, end=" ")
-        a, b = b, a + b 
-    break 
-
+    else:
+        n = int(user_input)
+        if n <= 0:
+            print("Please enter a positive integer.")
+        else:
+            # Calculate and print Fibonacci sequence
+            a, b = 0, 1
+            for _ in range(n):
+                print(a, end=" ")
+                a, b = b, a + b
+            break    
 
 
 if __name__ == "__main__":
